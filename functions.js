@@ -47,7 +47,7 @@ function oddsSmallerThan(n) {
    return n;
   
 }
-oddsSmallerThan(9);
+oddsSmallerThan(7);
 oddsSmallerThan(15);
 
 
