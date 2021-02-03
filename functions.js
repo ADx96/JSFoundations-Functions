@@ -7,12 +7,13 @@
  * greet("Hamza") logs "Hello Hamza"
  */
 function greet(name)  {
-
-  console.log(` Hello ${name}`)
-  
+  console.log(`Hello ${name}`)
+return name;
 }
-greet ("ahmed");
-/**
+
+greet("Hamza")
+
+/*
  * isOdd(n):
  * - receives a number n
  * - returns true if it's odd, false otherwise
@@ -23,15 +24,13 @@ greet ("ahmed");
  */
 function isOdd(n) {
   if(n % 2 === 1)
-    console.log("True")
+    return true;
 else 
-  console.log("False")
-
+return false;
 
 }
-isOdd("7");
-isOdd("10");
-
+console.log(isOdd(7))
+console.log(isOdd(10))
 /**
  * oddsSmallerThan(n):
  * - receives a number n
@@ -43,12 +42,11 @@ isOdd("10");
  */
 function oddsSmallerThan(n) {
   if(n % 2 === 1 || n % 2 === 0  )
-  console.log(parseInt(n/2))
-   return n;
+  
+   return parseInt(n/2);
   
 }
-oddsSmallerThan(7);
-oddsSmallerThan(15);
+console.log(oddsSmallerThan(15))
 
 
 /*
@@ -63,13 +61,13 @@ oddsSmallerThan(15);
  */
 function squareOrDouble(n) {
  if(n % 2 === 1)
-  console.log(Math.pow(n,2));
+  return Math.pow(n,2);
 else 
-  console.log(n+n);
+  return (n*2);
 
 }
 
-squareOrDouble(16)
-squareOrDouble(9)
+console.log(squareOrDouble(16))
+console.log(squareOrDouble(9))
 
 module.exports = { greet, isOdd, oddsSmallerThan, squareOrDouble };
